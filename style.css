@@ -1,6 +1,7 @@
 td {
     text-align: center;
 }
+
 th {
     text-align: center;
 }
@@ -66,3 +67,9 @@ th {
 .star-rating i~i~i~i~i {
     width: 100%;
 }
+
+.profilepic {
+    border-radius: 8px;
+    padding: 5px;
+    width: 70%;
+};

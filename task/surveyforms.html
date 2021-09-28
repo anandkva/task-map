@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title>Survey-Form</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Survey-Form</h1><p>Go to <a href="../index.html">Home</a></p>
+        <form>
+            <h5 for="inputfirst">Name<span style="color:#ff0000">*</span></h5>
+            <div class="row" style="width:60%">
+                <div class="col">
+                    <input type="text" class="form-control" id="inputfirst" required />
+                    <small id="firstname" class="form-text text-muted">First</small>
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" required />
+                    <small id="lastname" class="form-text text-muted">Last</small>
+                </div>
+            </div>
+            <br />
+            <h5 for="inputAddress">Email<span style="color:#ff0000">*</span></h5>
+            <div class="form-group">
+                <input type="email" class="form-control" id="inputEmail" style="width:58%">
+            </div>
+            <h5 for="inputfirst">Your Experience<span style="color:#ff0000">*</span></h5>
+            <span class="star-rating">
+                <input type="radio" name="rating1" value="1"><i></i>
+                <input type="radio" name="rating1" value="2"><i></i>
+                <input type="radio" name="rating1" value="3"><i></i>
+                <input type="radio" name="rating1" value="4"><i></i>
+                <input type="radio" name="rating1" value="5"><i></i>
+            </span>
+            <br />
+            <br />
+            <h5 for="inputAddress">How satisfied are you with<span style="color:#ff0000">*</span></h5>
+            <div>
+                <table class="table table-striped" required="true">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Very Unsatisfied</th>
+                            <th scope="col">Unsatisfied</th>
+                            <th scope="col">Neutral</th>
+                            <th scope="col">Satisfied</th>
+                            <th scope="col">Very Satisfied</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="firstrow">Purchase</th>
+                            <td><input class="form-check-input" type="checkbox"></td>
+                            <td><input class="form-check-input" type="checkbox"></td>
+                            <td><input class="form-check-input" type="checkbox"></td>
+                            <td><input class="form-check-input" type="checkbox"></td>
+                            <td><input class="form-check-input" type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td class="firstrow">Service</th>
+                            <td><input class="form-check-input" type="checkbox"></td>
+                            <td><input class="form-check-input" type="checkbox"></td>
+                            <td><input class="form-check-input" type="checkbox"></td>
+                            <td><input class="form-check-input" type="checkbox"></td>
+                            <td><input class="form-check-input" type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td class="firstrow">Company Overall</th>
+                            <td><input class="form-check-input" type="checkbox"></td>
+                            <td><input class="form-check-input" type="checkbox"></td>
+                            <td><input class="form-check-input" type="checkbox"></td>
+                            <td><input class="form-check-input" type="checkbox"></td>
+                            <td><input class="form-check-input" type="checkbox"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div><br />
+            <h5 for="inputAddress">How likely are you to<span style="color:#ff0000">*</span></h5>
+            <div>
+                <table class="table table-striped" required="true">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Very Unsatisfied</th>
+                            <th scope="col">Unsatisfied</th>
+                            <th scope="col">Neutral</th>
+                            <th scope="col">Satisfied</th>
+                            <th scope="col">Very Satisfied</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="firstrow">Buy from us again</th>
+                            <td><input class="form-check-input" type="checkbox"></td>
+                            <td><input class="form-check-input" type="checkbox"></td>
+                            <td><input class="form-check-input" type="checkbox"></td>
+                            <td><input class="form-check-input" type="checkbox"></td>
+                            <td><input class="form-check-input" type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td class="firstrow">Recommend our product to other</th>
+                            <td><input class="form-check-input" type="checkbox"></td>
+                            <td><input class="form-check-input" type="checkbox"></td>
+                            <td><input class="form-check-input" type="checkbox"></td>
+                            <td><input class="form-check-input" type="checkbox"></td>
+                            <td><input class="form-check-input" type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td class="firstrow">Recommend our company to other</th>
+                            <td><input class="form-check-input" type="checkbox"></td>
+                            <td><input class="form-check-input" type="checkbox"></td>
+                            <td><input class="form-check-input" type="checkbox"></td>
+                            <td><input class="form-check-input" type="checkbox"></td>
+                            <td><input class="form-check-input" type="checkbox"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br />
+            <h5 for="inputAddress">Additional commands or suggestions</h5>
+            <div class="form-group">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-secondary">Submit</button>
+            <br /><br />
+        </form>
+    </div>
+</body>
+</html>

@@ -70,6 +70,14 @@ th {
 
 .profilepic {
     border-radius: 8px;
-    padding: 5px;
     width: 70%;
-};
+}
+
+.eventpic {
+    margin-top: 30px;
+    width: 70px;
+    height: 70px;
+}
+.eventhead{
+    text-align: center;
+}

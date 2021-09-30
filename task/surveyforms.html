@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +16,6 @@
         rel="stylesheet">
     <title>Survey-Form</title>
 </head>
-
 <body>
     <div class="myform">
         <div class="head1">
@@ -31,35 +29,38 @@
             <p class="head2">Go to <a href="../index.html">Home</a></p>
         </div>
         <form class="myformview">
-            <h5 for="inputfirst">Name<span style="color:#ff0000">*</span></h5>
-            <div class="row" style="width:60%">
-                <div class="col">
-                    <input type="text" class="form-control" id="inputfirst" required />
-                    <small id="firstname" class="form-text text-muted">First</small>
+            <label for="inputfirst">Name<span style="color:#ff0000">*</span></label>
+            <div class="row" style="width: 60%;">
+                <div class="col-lg-6">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="First Name">
+                    </div>
                 </div>
-                <div class="col">
-                    <input type="text" class="form-control" required />
-                    <small id="lastname" class="form-text text-muted">Last</small>
+                <div class="col-lg-6">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Last Name">
+                    </div>
                 </div>
             </div>
             <br />
-            <h5 for="inputAddress">Email<span style="color:#ff0000">*</span></h5>
+            <label for="inputfirst">Email<span style="color:#ff0000">*</span></label>
+            <div class="form-group" style="width: 93%;">
+                <input type="email" class="form-control" id="inputEmail" style="width:58%" placeholder="mail@email.com">
+            </div>
             <div class="form-group">
-                <input type="email" class="form-control" id="inputEmail" style="width:58%">
+                <label for="inputfirst">Your Experience<span style="color:#ff0000">*</span></label>
+                <br/>
+                <span class="star-rating" style="top: -11px;">  
+                    <input type="radio" name="rating1" value="1"><i></i>
+                    <input type="radio" name="rating1" value="2"><i></i>
+                    <input type="radio" name="rating1" value="3"><i></i>
+                    <input type="radio" name="rating1" value="4"><i></i>
+                    <input type="radio" name="rating1" value="5"><i></i>
+                </span>
             </div>
-            <h5 for="inputfirst">Your Experience<span style="color:#ff0000">*</span></h5>
-            <span class="star-rating">
-                <input type="radio" name="rating1" value="1"><i></i>
-                <input type="radio" name="rating1" value="2"><i></i>
-                <input type="radio" name="rating1" value="3"><i></i>
-                <input type="radio" name="rating1" value="4"><i></i>
-                <input type="radio" name="rating1" value="5"><i></i>
-            </span>
-            <br />
-            <br />
-            <h5 for="inputAddress">How satisfied are you with<span style="color:#ff0000">*</span></h5>
+            <label for="inputAddress">How satisfied are you with<span style="color:#ff0000">*</span></label>
             <div class="table-responsive">
-                <table class="table table-striped" required="true">
+                <table class="table table-striped">
                     <thead>
                         <tr>
                             <th scope="col"></th>
@@ -98,9 +99,9 @@
                     </tbody>
                 </table>
             </div><br />
-            <h5 for="inputAddress">How likely are you to<span style="color:#ff0000">*</span></h5>
+            <label for="inputAddress">How likely are you to<span style="color:#ff0000">*</span></label>
             <div class="table-responsive">
-                <table class="table table-striped" required="true">
+                <table class="table table-striped">
                     <thead>
                         <tr>
                             <th scope="col"></th>
@@ -140,7 +141,7 @@
                 </table>
             </div>
             <br />
-            <h5 for="inputAddress">Additional commands or suggestions</h5>
+            <label for="inputAddress">Additional commands or suggestions</label>
             <div class="form-group">
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
@@ -153,5 +154,4 @@
     </div>
     <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
 </body>
-
 </html>

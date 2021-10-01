@@ -1,0 +1,84 @@
+.head1 {
+  padding: 20px;
+  font-family: 'PT Serif', serif;
+  text-align: center;
+}
+.head2 {
+  text-align: center;
+  color: white;
+}
+.head2>a {
+  text-decoration: none;
+  color: white;
+}
+.head2>a:hover {
+  padding: 3px;
+  border: 2px solid white;
+  border-radius: 10px;
+  transition: 0.5s;
+  text-decoration: none;
+  color: black;
+}
+.head3 {
+  text-align: center;
+  font-family: 'Noto Sans Display', sans-serif;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+.head3:hover {
+  color: rgb(228, 228, 228);
+  cursor: pointer;
+  text-shadow: 8px 8px 8px rgb(0, 0, 0);
+  transition: 0.5s
+}
+.wrapper {
+  text-align: center;
+}
+.searchbox {
+  margin: auto;
+  display: block;
+}
+.fullbody {
+  background-color: rgb(19, 164, 201);
+}
+.cardbody {
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding: 25px;
+}
+.row {
+  padding: 25px;
+  display: grid;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  grid-template-columns: auto auto auto auto;
+}
+.col {
+  border: 0.5px ridge rgba(168, 168, 168, 0.507);
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+}
+.col:hover {
+  background-color: rgba(101, 116, 116, 0.678);
+  box-shadow: 8px 8px 8px black;
+  transform: scale(1.1);
+  transition: .5s;
+}
+.eventpic {
+  margin-top: 30px;
+  width: 70px;
+  height: 70px;
+}
+.row-2 {
+
+  display: inline-grid;
+  grid-template-columns: auto auto;
+}
+.boxcol {
+  padding: 10px;
+  border-radius: 15px;
+}

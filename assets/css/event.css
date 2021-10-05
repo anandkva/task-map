@@ -86,3 +86,21 @@
     transform: scale(1.1);
     transition: .5s;
 }
+@media screen and (min-width: 928px) {
+    .profilepic {
+        width: 250px;
+        height: auto;
+    };
+  }
+
+  @media screen and (max-width: 1241px) {
+    .profilepic {
+        width: 180px;
+        height: auto;
+    };
+  }
+  @media screen and (max-width: 300px) {
+    .profilepic {
+        width: 50px;
+    };
+  }

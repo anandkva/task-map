@@ -79,6 +79,9 @@ p {
 .bodytxt{
     font-size: 15px;
 }
+.profilepic{
+    display: block;
+}
 @media only all and (max-width: 1300px) {
     .weatherforcastbox{
         display: none;
@@ -106,3 +109,11 @@ p {
       font-size: 10px;
     }
   }
+  @media screen and (min-width: 928px) {
+    .profilepic {
+        width: 200px;
+        height: auto
+    };
+  }
+
+  

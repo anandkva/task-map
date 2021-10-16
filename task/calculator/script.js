@@ -25,20 +25,20 @@ const del = () => {
 };
 const validate = (evt) => {
     var theEvent = evt || window.event;
-    // Handle paste
-    if (theEvent.type === 'keyV') {
-       key = event.clipboardData.getData('text/plain');
-       console.log("worked")
-       
-    } else {
-        // Handle key press
+    if (theEvent) {
         var key = theEvent.keyCode || theEvent.which;
         key = String.fromCharCode(key);
     }
     var regex = /[0-9 \+ \- /* ]|\./;
-    if (!regex.test(key)) {
+    if (!regex.test(key) && theEvent.keyCode !== 13) {
+        alret()
         theEvent.returnValue = false;
-        alert("Only Numbers")
-        if (theEvent.preventDefault) theEvent.preventDefault();
+       
+    } 
+    if(theEvent.keyCode == 13){
+        solve()
     }
+}
+const alret = () =>{
+    alert("Please enter number value.");
 }

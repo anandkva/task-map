@@ -6,6 +6,8 @@ body {
     line-height: 1.5;
 }
 .pager-nav {
+    padding-top: 40px;
+    padding-bottom: 40px;
     text-align: center;
 }
 .pager-nav span {

@@ -9,6 +9,7 @@ body {
     place-items: center;
     background: rgba(27, 11, 11, 0.1)
 }
+
 #result {
     background-color: rgba(78, 78, 78, 0.24);
     padding: 20px;

@@ -32,13 +32,14 @@ const validate = (evt) => {
     var regex = /[0-9 \+ \- /* ]|\./;
     if (!regex.test(key) && theEvent.keyCode !== 13) {
         alret()
-        theEvent.returnValue = false;
-       
+        theEvent.returnValue = false;       
     } 
     if(theEvent.keyCode == 13){
         solve()
     }
 }
+
 const alret = () =>{
     alert("Please enter number value.");
 }
+

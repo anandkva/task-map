@@ -63,12 +63,21 @@
 .myformview1 {
     padding: 25px;
     margin: auto;
-    width: 65%;
+    width: 70%;
     background-color: rgb(250, 195, 195);
     border-radius: 30px;
     box-shadow: 20px 20px 20px black;
+    
 }
-
+td > a {
+    text-decoration: none;
+    color: rgb(1, 1, 151);
+}
+td > a:hover {
+    text-decoration: none;
+    color: black;
+   
+}
 .wrapper {
     text-align: center;
 }

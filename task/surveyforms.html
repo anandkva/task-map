@@ -19,33 +19,39 @@
 <body>
     <div class="myform">
         <div class="head1">
-            <h1 class="head3">
+            <p class="head2">Go to <a href="../index.html">Home</a></p>
+            <h1 class="head3" id="title">
                 <span>
                     <img class="rounded logoimg"
                         src="https://miro.medium.com/fit/c/1360/1360/1*2CxNTEf0ywb2tvW0B9l4Yg.png"
                         alt="Generic placeholder image">
                 </span> Guvi survey Form
             </h1>
-            <p class="head2">Go to <a href="../index.html">Home</a></p>
+            <p id="description" style="color: blanchedalmond;">This is survy form</p>
         </div>
-        <form class="myformview" onsubmit="submitform()">
-            <label for="inputfirst">Name<span style="color:#ff0000">*</span></label>
-            <div class="row" style="width: 60%;">
+        <form id="survey-form" class="survey-form" onsubmit="submitform()">
+            <div class="row" style="width: 57%;">
                 <div class="col-sm-6">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="First Name" required="true">
+                    <div class="form-group">
+                        <label for="name" id="name-label">First Name<span style="color:#ff0000">*</span></label>
+                        <input type="text" class="form-control" id="first-name" placeholder="First Name" required>
                     </div>
                 </div>
                 <div class="col-sm-6">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Last Name">
+                    <div class="form-group">
+                        <label for="name" id="name-label">Last Name<span style="color:#ff0000">*</span></label>
+                        <input type="text" class="form-control" id="last-name" placeholder="Last Name" required>
                     </div>
                 </div>
             </div>
-            <br />
-            <label for="inputfirst">Email<span style="color:#ff0000">*</span></label>
             <div class="form-group" style="width: 93%;">
-                <input type="email" class="form-control" id="inputEmail" style="width:58%" placeholder="mail@email.com"
+                <label for="email" id="email-label">Email<span style="color:#ff0000">*</span></label>
+                <input type="email" class="form-control" id="email" style="width:58%" placeholder="mail@email.com"
+                    required>
+            </div>
+            <div class="form-group" style="width: 93%;">
+                <label for="phone" id="number-label">Phone Number<span style="color:#ff0000">*</span></label>
+                <input type="tel" class="form-control" id="phone" style="width:58%" placeholder="9000000000"
                     required>
             </div>
             <div class="form-group">
@@ -180,10 +186,10 @@
             <br />
             <label for="inputAddress">Additional commands or suggestions</label>
             <div class="form-group">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <textarea class="form-control" id="comments" rows="3"></textarea>
             </div>
             <div class="wrapper">
-                <button type="submit" class="btn btn-primary surveybtn">Submit</button>
+                <button type="submit" id="submit" class="btn btn-primary surveybtn">Submit</button>
             </div>
             <br /><br />
         </form>

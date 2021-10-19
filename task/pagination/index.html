@@ -18,13 +18,14 @@
     <div class="container">
         <div class="heading">
             <p>Go To <a href="../../index.html">Home</a></p>
-            <h1>Pagenation Task</h1>
+            <h1 id="title">Pagenation Task</h1>
+            <p id="description">This is Pagination Task</p>
         </div>
         <div class="table-responsive">
-            <table id="pager" class="table" style="text-align: center;">
+            <table id="pager" class="table table-bordered" style="text-align: center;">
                 <thead class="thead-dark">
                     <tr>
-                        <th scope="col">Name</th>
+                        <th scope="col" id="name">Name</th>
                         <th scope="col">Age</th>
                         <th scope="col">Address</th>
                     </tr>
@@ -32,7 +33,9 @@
                 <tbody id="myTable"></tbody>
             </table>
         </div>
-        <div id="pageNavPosition" class="pager-nav"></div>
+        <div id="buttons" class="d-flex justify-content-center">
+            <div id="pageNavPosition" class="pager-nav"></div>
+        </div>
     </div>
 </body>
 

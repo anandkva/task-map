@@ -9,7 +9,7 @@
 
 # How do I verify the criteria for the task by myself?
 + In your html file, inside the body tag add the following script tag.
-	<script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+> <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
 + Select your project task(if available) from the drop down.
 + Click on the Run Test button to start the test case.
 + Below the Run test button you will see the test case result.

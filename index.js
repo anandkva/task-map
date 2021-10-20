@@ -46,13 +46,19 @@ var tableData = [
         "gitUrl": "https://github.com/anandkva/task-map/blob/dev/task/form/index.html",
         "deployUrl": "https://anandkva.github.io/task-map/task/form/index.html",
         "demoUrl": "./task/form/index.html"
+    },
+    {
+        "name": "Tic-Tac-Toe Game",
+        "gitUrl": "https://github.com/anandkva/task-map/blob/dev/task/tictak/index.html",
+        "deployUrl": "https://anandkva.github.io/task-map/tictak/form/index.html",
+        "demoUrl": "./task/tictak/index.html"
     }
 ]
 const buildTable = (data) => {
     var table = document.getElementById('myTable')
     for (var i = 0; i < data.length; i++) {
         var row = `<tr>
-                        <td class="firstrow">${(i + 1)}</td>
+                        <td class="firstrow" style="padding-left: 45px;">${(i + 1)}</td>
                         <td class="firstrow">${data[i].name}</td>
                         <td class="firstrow"><a href="${data[i].gitUrl}">Click Here</a></td>
                         <td class="firstrow"><a href="${data[i].deployUrl}">Click Here</a></td>
